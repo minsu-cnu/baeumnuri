@@ -10,6 +10,13 @@ class around_lecture extends StatelessWidget {
     'images/japanese.png',
     'images/speech.png',
     'images/guitar.png',
+    'images/song_class.jpeg',
+    'images/biggold.jpg',
+    'images/talk_pocket.jpg',
+    'images/black_white_stone.jpg',
+    'images/dei.jpg',
+    'images/healing_travel.jpg',
+
   ];
   // final Map<String?, String> lecture_image = {
   //   '생활일본어': 'images/japanese.png',
@@ -123,7 +130,7 @@ class around_lecture extends StatelessWidget {
   ListView makeList(AsyncSnapshot<List<LectureCardModel>> snapshot) {
     return ListView.separated(
       scrollDirection: Axis.horizontal,
-      itemCount: 3,
+      itemCount: 9,
       padding: const EdgeInsets.symmetric(
         vertical: 10,
         horizontal: 20,
