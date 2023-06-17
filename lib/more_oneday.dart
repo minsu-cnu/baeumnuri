@@ -155,7 +155,7 @@ class more_lecture extends StatelessWidget {
         backgroundColor: Colors.white,
         centerTitle: true,
         title: const Text(
-          '맞춤 강좌',
+          '원데이 클래스',
           style: TextStyle(
             fontSize: 22,
             fontWeight: FontWeight.w600,
