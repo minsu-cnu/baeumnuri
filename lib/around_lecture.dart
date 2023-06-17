@@ -16,8 +16,8 @@ class around_lecture extends StatelessWidget {
     'images/black_white_stone.jpg',
     'images/dei.jpg',
     'images/healing_travel.jpg',
-
   ];
+
   // final Map<String?, String> lecture_image = {
   //   '생활일본어': 'images/japanese.png',
   //   '생활스피치': 'images/speech.png',

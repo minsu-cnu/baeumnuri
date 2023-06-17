@@ -3,16 +3,19 @@ import 'package:nuri_01/information.dart';
 import 'package:nuri_01/lecturecard_widget.dart';
 import 'package:nuri_01/models/lecture_card_model.dart';
 import 'package:nuri_01/more_lecture.dart';
-import 'package:nuri_01/services/api_service.dart';
+import 'package:nuri_01/services/api_service2.dart';
 
 class OnedayClass extends StatelessWidget {
   final List<String> lecture_image = <String>[
-    'images/japanese.png',
-    'images/speech.png',
-    'images/guitar.png',
-    'images/songclass.png',
-    'images/daeguem.png',
-    'images/book.png',
+    'images/healing_travel.jpg',
+    'images/healing_travel.jpg',
+    'images/semu.jpeg',
+    'images/rpa.jpg',
+    'images/com_internet.png',
+    'images/visual.png',
+    'images/fashion_item.jpg',
+    'images/abata_uisang.jpg',
+    'images/zep.png',
   ];
   // final Map<String?, String> lecture_image = {
   //   '생활일본어': 'images/japanese.png',
@@ -126,13 +129,12 @@ class OnedayClass extends StatelessWidget {
   ListView makeList(AsyncSnapshot<List<LectureCardModel>> snapshot) {
     return ListView.separated(
       scrollDirection: Axis.horizontal,
-      itemCount: 3,
+      itemCount: 9,
       padding: const EdgeInsets.symmetric(
         vertical: 10,
         horizontal: 20,
       ),
       itemBuilder: (context, index) {
-        index += 3;
         var lectureCard = snapshot.data![index];
         return GestureDetector(
           onTap: () {
