@@ -12,10 +12,6 @@ class around_lecture extends StatelessWidget {
     'images/guitar.png',
     'images/song_class.jpeg',
     'images/biggold.jpg',
-    'images/talk_pocket.jpg',
-    'images/black_white_stone.jpg',
-    'images/dei.jpg',
-    'images/healing_travel.jpg',
   ];
 
   // final Map<String?, String> lecture_image = {
@@ -130,7 +126,7 @@ class around_lecture extends StatelessWidget {
   ListView makeList(AsyncSnapshot<List<LectureCardModel>> snapshot) {
     return ListView.separated(
       scrollDirection: Axis.horizontal,
-      itemCount: 9,
+      itemCount: 5,
       padding: const EdgeInsets.symmetric(
         vertical: 10,
         horizontal: 20,
@@ -173,7 +169,7 @@ class around_lecture extends StatelessWidget {
 
   List<Widget> create_lecture(BuildContext context) {
     List<Widget> lecture = [];
-    for (int i = 0; i < lecture_name.length; i++) {
+    for (int i = 0; i <9; i++) {
       FutureBuilder<List<LectureCardModel>> lec = FutureBuilder(
         future: lectureCards,
         builder: (context, snapshot) {

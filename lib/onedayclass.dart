@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:nuri_01/information.dart';
 import 'package:nuri_01/lecturecard_widget.dart';
 import 'package:nuri_01/models/lecture_card_model.dart';
-import 'package:nuri_01/more_lecture.dart';
+import 'package:nuri_01/more_oneday.dart';
 import 'package:nuri_01/services/api_service2.dart';
 
 class OnedayClass extends StatelessWidget {
@@ -12,10 +12,6 @@ class OnedayClass extends StatelessWidget {
     'images/semu.jpeg',
     'images/rpa.jpg',
     'images/com_internet.png',
-    'images/visual.png',
-    'images/fashion_item.jpg',
-    'images/abata_uisang.jpg',
-    'images/zep.png',
   ];
   // final Map<String?, String> lecture_image = {
   //   '생활일본어': 'images/japanese.png',
@@ -129,7 +125,7 @@ class OnedayClass extends StatelessWidget {
   ListView makeList(AsyncSnapshot<List<LectureCardModel>> snapshot) {
     return ListView.separated(
       scrollDirection: Axis.horizontal,
-      itemCount: 9,
+      itemCount: 5,
       padding: const EdgeInsets.symmetric(
         vertical: 10,
         horizontal: 20,
@@ -172,7 +168,7 @@ class OnedayClass extends StatelessWidget {
 
   List<Widget> create_lecture(BuildContext context) {
     List<Widget> lecture = [];
-    for (int i = 0; i < lecture_name.length; i++) {
+    for (int i = 0; i < 9; i++) {
       FutureBuilder<List<LectureCardModel>> lec = FutureBuilder(
         future: lectureCards,
         builder: (context, snapshot) {
