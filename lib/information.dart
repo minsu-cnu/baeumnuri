@@ -89,14 +89,9 @@ class _informationState extends State<information> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        const Flexible(
-                          flex: 1,
-                          child: SizedBox(
-                            width: 60,
-                          ),
-                        ),
+                        
                         Flexible(
-                          flex: 1,
+                          flex: 3,
                           child: SizedBox(
                             child: FittedBox(
                               fit: BoxFit.fitWidth,
